@@ -102,7 +102,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
 
           <a
-            href="#"
+            href="/"
             className="font-bold tracking-tight text-[#0284C7]"
           >
             <span className="text-xl">
@@ -114,44 +114,48 @@ export default function Home() {
             </span>
           </a>
 
+          {/* DESKTOP MENU */}
+
           <div className="hidden items-center gap-8 md:flex">
 
             <a
-              href="#ecosystem"
+              href="/ecosystem"
               className="text-sm font-medium text-[#0284C7] hover:text-[#0369A1]"
             >
               Ecosystem
             </a>
 
             <a
-              href="#automation"
+              href="/automation"
               className="text-sm font-medium text-[#0284C7] hover:text-[#0369A1]"
             >
               AI Automation
             </a>
 
             <a
-              href="#process"
+              href="/process"
               className="text-sm font-medium text-[#0284C7] hover:text-[#0369A1]"
             >
               Process
             </a>
 
             <a
-              href="#about"
+              href="/about"
               className="text-sm font-medium text-[#0284C7] hover:text-[#0369A1]"
             >
               About
             </a>
 
             <a
-              href="#contact"
+              href="/contact"
               className="rounded-full bg-[#0284C7] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0369A1]"
             >
               Get Started
             </a>
 
           </div>
+
+          {/* MOBILE MENU BUTTON */}
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -163,13 +167,15 @@ export default function Home() {
 
         </div>
 
+        {/* MOBILE MENU */}
+
         {menuOpen && (
           <div className="border-t border-[#D5E5DF] bg-[#F8FCFA] px-6 py-5 md:hidden">
 
             <div className="flex flex-col gap-4">
 
               <a
-                href="#ecosystem"
+                href="/ecosystem"
                 className="font-medium text-[#0284C7]"
                 onClick={() => setMenuOpen(false)}
               >
@@ -177,7 +183,7 @@ export default function Home() {
               </a>
 
               <a
-                href="#automation"
+                href="/automation"
                 className="font-medium text-[#0284C7]"
                 onClick={() => setMenuOpen(false)}
               >
@@ -185,7 +191,7 @@ export default function Home() {
               </a>
 
               <a
-                href="#process"
+                href="/process"
                 className="font-medium text-[#0284C7]"
                 onClick={() => setMenuOpen(false)}
               >
@@ -193,7 +199,7 @@ export default function Home() {
               </a>
 
               <a
-                href="#about"
+                href="/about"
                 className="font-medium text-[#0284C7]"
                 onClick={() => setMenuOpen(false)}
               >
@@ -201,7 +207,7 @@ export default function Home() {
               </a>
 
               <a
-                href="#contact"
+                href="/contact"
                 className="font-medium text-[#0284C7]"
                 onClick={() => setMenuOpen(false)}
               >
@@ -239,6 +245,7 @@ export default function Home() {
             <h1 className="text-5xl font-bold leading-tight tracking-tight text-[#0284C7] sm:text-6xl lg:text-8xl">
 
               AI Business
+
               <span className="block">
                 Automation
               </span>
@@ -258,14 +265,14 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
               <a
-                href="#contact"
+                href="/contact"
                 className="rounded-full bg-[#0284C7] px-7 py-4 text-center font-semibold text-white shadow-lg shadow-sky-200 hover:bg-[#0369A1]"
               >
                 Build My Business Ecosystem →
               </a>
 
               <a
-                href="#ecosystem"
+                href="/ecosystem"
                 className="rounded-full border border-[#D5E5DF] bg-white px-7 py-4 text-center font-semibold text-[#0284C7] hover:border-[#38BDF8] hover:bg-[#F8FCFA]"
               >
                 Explore the Ecosystem
@@ -516,13 +523,9 @@ export default function Home() {
 
                 <div className="flex items-center gap-3">
 
-                  {/* LEAF GREEN INDUSTRY ICON */}
-
                   <span className="text-[#4F8F3A]">
                     ✦
                   </span>
-
-                  {/* LEAF GREEN INDUSTRY TITLES */}
 
                   <span className="font-semibold text-[#4F8F3A]">
                     {industry}
@@ -564,7 +567,7 @@ export default function Home() {
             </p>
 
             <a
-              href="#contact"
+              href="/contact"
               className="mt-8 inline-flex rounded-full bg-[#0284C7] px-7 py-4 font-semibold text-white hover:bg-[#0369A1]"
             >
               Get an Automation Consultation →
@@ -773,51 +776,31 @@ export default function Home() {
               <div className="mt-8 space-y-4">
 
                 <div className="flex gap-3">
-
-                  <span className="text-[#4F8F3A]">
-                    ✓
-                  </span>
-
+                  <span className="text-[#4F8F3A]">✓</span>
                   <span className="text-[#29443D]">
                     Identify repetitive tasks
                   </span>
-
                 </div>
 
                 <div className="flex gap-3">
-
-                  <span className="text-[#4F8F3A]">
-                    ✓
-                  </span>
-
+                  <span className="text-[#4F8F3A]">✓</span>
                   <span className="text-[#29443D]">
                     Find automation opportunities
                   </span>
-
                 </div>
 
                 <div className="flex gap-3">
-
-                  <span className="text-[#4F8F3A]">
-                    ✓
-                  </span>
-
+                  <span className="text-[#4F8F3A]">✓</span>
                   <span className="text-[#29443D]">
                     Connect your business systems
                   </span>
-
                 </div>
 
                 <div className="flex gap-3">
-
-                  <span className="text-[#4F8F3A]">
-                    ✓
-                  </span>
-
+                  <span className="text-[#4F8F3A]">✓</span>
                   <span className="text-[#29443D]">
                     Explore practical AI solutions
                   </span>
-
                 </div>
 
               </div>
