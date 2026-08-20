@@ -64,6 +64,13 @@ export const metadata: Metadata = {
     siteName: "BTHTHM",
     type: "website",
   },
+    twitter: {
+    card: "summary_large_image",
+    title:
+      "BTHTHM | AI Automation, Business Automation, Websites & Custom Software",
+    description:
+      "AI automation, business automation, website design, custom software, mobile apps, and connected business systems for growing businesses.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
